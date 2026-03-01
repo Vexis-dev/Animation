@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VEXIS - 3D Cinematic Digital Creator. Terminal art, Python visual effects, and cyberpunk aesthetics.">
+    <meta name="author" content="Vexis">
+    <meta name="keywords" content="Vexis, Python, Terminal Art, ASCII, Cyberpunk, 9B Class, Developer">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="VEXIS | 3D Cinematic">
+    <meta property="og:description" content="Digital identity of Vexis - Creator of terminal visual effects">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vexis-dev.github.io">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VEXIS | 3D Cinematic">
+    <meta name="twitter:description" content="Terminal art and visual effects by Vexis">
+    
+    <title>VEXIS | 3D Cinematic</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🫆</text></svg>">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    <div class="scanlines"></div>
+    <div class="noise"></div>
+    
+    <div class="notification" id="notification">
+        <span class="notification-icon">✓</span>
+        <span>Python script copied!</span>
+    </div>
+    
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <span class="logo-icon">🫆</span>
+                <span>VEXIS</span>
+            </div>
+            <div class="status">
+                <span class="status-dot"></span>
+                <span class="status-text">3D_CINEMATIC_V2</span>
+            </div>
+        </header>
+        
+        <section class="hero">
+            <div class="hero-badge">
+                <span class="badge-icon">⚡</span>
+                <span>FIXED_EDITION // PYTHON_3D</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="glitch-text" data-text="VEXIS">VEXIS</span>
+            </h1>
+            
+            <div class="hero-subtitle">
+                <span class="subtitle-line">[ TERMINAL_ARTIST ]</span>
+                <span class="subtitle-line">[ PYTHON_ENGINEER ]</span>
+                <span class="subtitle-line">[ 9B_CLASS_CREATOR ]</span>
+            </div>
+        </section>
+        
+        <div class="grid">
+            <article class="card card-featured">
+                <div class="card-glow"></div>
+                <div class="card-icon">🎬</div>
+                <h3>3D Cinematic v2</h3>
+                <p>
+                    Полноценный <span class="highlight">3D cinematic engine</span> в терминале. 
+                    Использует математику векторов, камеру с перспективой, 
+                    RGB/HSV цвета и физику частиц.
+                </p>
+                <div class="card-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">3D Math</span>
+                    <span class="tag">Terminal</span>
+                </div>
+            </article>
+            
+            <article class="card">
+                <div class="card-icon">🔥</div>
+                <h3>Heat System</h3>
+                <p>
+                    Продвинутая система цветов с <span class="highlight">C.heat()</span> — 
+                    плавный переход от чёрного через красный и жёлтый к белому. 
+                    Идеально для огненных эффектов.
+                </p>
+                <div class="card-tags">
+                    <span class="tag">RGB</span>
+                    <span class="tag">HSV</span>
+                    <span class="tag">Gradients</span>
+                </div>
+            </article>
+            
+            <article class="card">
+                <div class="card-icon">🧮</div>
+                <h3>3D Engine</h3>
+                <p>
+                    Классы <span class="highlight">Vec3</span> и <span class="highlight">Camera</span> 
+                    с полной поддержкой вращения по XYZ, проекции перспективы 
+                    и spring-физики для анимаций.
+                </p>
+                <div class="card-tags">
+                    <span class="tag">Vectors</span>
+                    <span class="tag">Camera</span>
+                    <span class="tag">Projection</span>
+                </div>
+            </article>
+            
+            <article class="card">
+                <div class="card-icon">🌌</div>
+                <h3>Scenes</h3>
+                <p>
+                    10+ уникальных сцен: countdown, matrix rain, galaxy fly, 
+                    shockwave, torus spin, fire frame, contact flip и другие. 
+                    Каждая — отдельный визуальный перформанс.
+                </p>
+                <div class="card-tags">
+                    <span class="tag">Particles</span>
+                    <span class="tag">Effects</span>
+                    <span class="tag">Animation</span>
+                </div>
+            </article>
+            
+            <article class="card">
+                <div class="card-icon">⚡</div>
+                <h3>9B Class</h3>
+                <p>
+                    Специальная версия для <span class="highlight">9Б класса</span> 
+                    с правильным ASCII-артом, лазерной сборкой, glitch-эффектами 
+                    и бесконечным огненным фреймом.
+                </p>
+                <div class="card-tags">
+                    <span class="tag">ASCII Art</span>
+                    <span class="tag">Glitch</span>
+                    <span class="tag">Fire</span>
+                </div>
+            </article>
+            
+            <article class="card card-contact">
+                <div class="card-icon">📡</div>
+                <h3>Contact</h3>
+                <p>
+                    Хочешь такое же интро? Пиши в Telegram.
+                </p>
+                <a href="https://t.me/Vexis_0" target="_blank" rel="noopener" class="contact-link">
+                    <span>tg:@Vexis_0</span>
+                    <span class="arrow">→</span>
+                </a>
+            </article>
+        </div>
+        
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="btn-close"></span>
+                    <span class="btn-minimize"></span>
+                    <span class="btn-maximize"></span>
+                </div>
+                <div class="terminal-title">vexis_3d_cinematic.py</div>
+            </div>
+            <div class="terminal-body" id="terminal">
+                <div class="terminal-line">
+                    <span class="prompt">$</span>
+                    <span class="command">python3 vexis_3d.py --mode=cinematic</span>
+                </div>
+                <div class="terminal-line delay-1">
+                    <span class="output">[INIT] Loading 3D engine...</span>
+                </div>
+                <div class="terminal-line delay-2">
+                    <span class="output">[OK] Vec3 math module loaded</span>
+                </div>
+                <div class="terminal-line delay-3">
+                    <span class="output">[OK] Camera projection ready</span>
+                </div>
+                <div class="terminal-line delay-4">
+                    <span class="output">[OK] RGB/HSV palette initialized</span>
+                </div>
+                <div class="terminal-line delay-5">
+                    <span class="output success">[RUN] Starting 3D cinematic sequence...</span>
+                </div>
+                <div class="terminal-line delay-6">
+                    <span class="cursor"></span>
+                </div>
+            </div>
+        </div>
+        
+        <section class="action-section">
+            <div class="action-info">
+                <span class="action-label">COPY SCRIPT</span>
+                <span class="action-hint">Click to copy Python code to clipboard</span>
+            </div>
+            <button class="mystic-btn" id="copyBtn" aria-label="Copy Python script">
+                <span class="btn-icon">🫆</span>
+                <span class="btn-text">EXECUTE</span>
+            </button>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <span class="footer-logo">VEXIS</span>
+                    <span class="footer-divider">//</span>
+                    <span class="footer-year">2026</span>
+                </div>
+                <div class="footer-right">
+                    <span class="footer-tech">Python 3.11+</span>
+                    <span class="footer-divider">•</span>
+                    <span class="footer-tech">Terminal</span>
+                    <span class="footer-divider">•</span>
+                    <span class="footer-tech">GitHub Pages</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
